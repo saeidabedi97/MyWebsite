@@ -7,9 +7,10 @@
     body{
         margin: 0 auto;
         /* background-color: black; */
-        background-image: url("computer.jfif");
+        background: rgb(63,64,63);
+background: linear-gradient(155deg, rgba(63,64,63,1) 33%, rgba(233,114,76,1) 100%);
         background-repeat: no-repeat;
-        background-size: 100% 85%;
+        /* background-size: 100% 85%; */
     }
 
 
@@ -20,17 +21,41 @@
         border-radius: 5%;
         
     }
-    #header{
+
+    #left-section{
         display: grid;
+        width: 85%;
+        /* margin: 15% 0% 0% 35%; */
+        height: 85%;
+        border-radius: 5%;
+        justify-content: center;
+    }
+
+    .text-left-section{
+        border-top:5px solid orangered;
+        border-bottom: 5px solid orangered;
+        margin-top: 25%;
         
-        grid-template-rows: auto auto auto auto;
-        justify-items: center;
-        background-color: rgba(0,0,0,0.5);
-        padding: 83px;
-        /* margin-left: 20%; */
+        
+    }
+
+
+    #right-section{
+        /* margin-left: 15%; */
+        /* display: grid;
+        grid-template-rows: auto auto; */
+        color: whitesmoke;
+    }
+    #first-section{
+        /* display: grid;
+        grid-template-columns: auto auto; */
+        background-color: rgba(0,0,0,0.75);
+        width: 95%;
+        
+        margin: 2.5% 0% 0% 2.55%;
         color: whitesmoke;
         /* height: 750px */
-        animation: fadeInAnimation ease 3s;
+        /* animation: fadeInAnimation ease 3s; */
         
         
     }
@@ -41,40 +66,41 @@
         display: grid;
         grid-template-columns: auto auto auto auto auto;
         /* position: fixed; */
-        justify-items: space-between;
-        background-color: rgba(0, 0, 0,0.1);
-        /* text-align: center; */
         color: whitesmoke;
-        margin-bottom: 0%;
-        margin-top: 0%;
-        border-bottom: 3px solid #E03616;
+        margin: 0% 0% 0% 35% ;
+    
         padding: 10px;
+        gap: 15px;
         list-style-type: none;
         text-decoration: none;
         font-size: 20px;
-        font-family: monospace;
-        /* animation: fadeInAnimation ease 3s; */
+        font-family: fantasy;
         
     }
 
-    nav {
-        /* position: fixed; */
+    #nav-div {
+        display: grid;
+       grid-template-columns:auto auto ;
     }
 
-    /* li{
-        padding: 20%;
-    } */
+    li{
+        border:2px solid orangered;
+        border-radius: 100%;
+        padding: 10px;
+    }
 
-   h1{
+   /* h1{
        font-family: monospace;
        font-size: 30px;
+       height: 35%;
+       
        animation: fadeInAnimation ease 3s;
    }
 
    h2{
        font-family: monospace;
        animation: fadeInAnimation ease 3s;
-   }
+   } */
 
    @keyframes fadeInAnimation {
             0% {
@@ -89,9 +115,9 @@
     #About-me{
         /* background-color: rgba(0, 0, 0,0.5); */
         /* background-color: #15034191; */
-        background-image: url("computer2.jfif");
+        
         display: grid;
-        grid-template-rows: auto auto;
+        grid-template-: auto auto auto;
         text-align: center;
         color: whitesmoke;
         /* margin-top: 25%; */
@@ -108,28 +134,30 @@
 </style>
 </head>
 <body>
-    <div id= "nav-div"> 
-        <nav class="nav">
-            <ul>
-            <li>Home</li>
-            <li>About me</li>
-            <li>Technical skills</li>
-            <li>Projects</li>
-            <li>Contact</li>
-            </ul>
-        </nav>
-    </div>
+    
 
 
-    <div id="header">
-        <h1>Hello </h1>
-        <h2>I'm Saeid, a Front-end developer</h2>
-        <img id="MyPicture" src="me.jpg" alt="my photo">
-        <h2>Welcome to my portfolio</h2>  
+    <div id="first-section">
+        <div id= "nav-div"> 
+            <div id="nav-logo" style="display: grid; grid-template-columns: 1fr 95%;margin-left: 10%;">
+                <h1 style="font-family: fantasy; font-size: 50px;">Saeid</h1>
+                <h2 style="font-family: fantasy;">Abedi</h2>
+            </div>
+            <nav class="nav">
+                <ul>
+                <li>Home</li>
+                <li>Technical skills</li>
+                <li>Projects</li>
+                <li>Contact</li>
+                </ul>
+            </nav>
+        </div><br>
+            <img id="MyPicture" src="me.jpg" alt="my photo" style="margin-left: 35%;">
     </div>
+
 
     <div id="About-me">
-        <h1 id="about-me-h1">About me<h1>
+        <h1 id="about-me-h1">About me<h1></h1>
         <p>A recently graduated computer science engineer <br>with exprience working in 
         machine learning and deep learning.<br> i have a passion about Front-end developer.</p>
     </div>
