@@ -4,11 +4,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
     body{
         margin: 0 auto;
         /* background-color: black; */
         background: rgb(29,32,31);
-        background: linear-gradient(0deg, rgba(29,32,31,1) 19%, rgba(87,226,229,1) 86%);
+        background: linear-gradient(0deg, rgb(255, 255, 255) 19%, rgba(87,226,229,1) 86%);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -25,18 +31,19 @@
     }
 
     #bottom-section{
-        /* margin-left: 15%; */
         display: grid;
-        grid-template-rows: auto auto;
+        position: relative;
+        margin:10% 0% 0% 30%;
         color: whitesmoke;
     }
-    #first-section{
+    #S-page{
         /* display: grid;
-        grid-template-columns: auto auto; */
-        background-color: rgb(20%,20%,20%);
-        background-size: cover;
+        grid-template-rows: 1fr 1fr 85%; */
+        height: 1050px;
+        background-color: rgb(10%,10%,10%,0.8);
+        /* background-size: cover;
         background-attachment: fixed;
-        background-position:center center;
+        background-position:center center; */
         width: 95%;
         
         margin: 2.5% 0% 0% 2.55%;
@@ -68,6 +75,7 @@
     #nav-div {
         display: grid;
        grid-template-columns:auto auto ;
+       padding: 10px;
     }
 
     li{
@@ -91,24 +99,24 @@
     inherits: false;
 }
     .text-style{
-        background: -webkit-linear-gradient(#eee, #333);
+        font-size: 120px;
+        font-family: fantasy;
+        background: -webkit-linear-gradient(var(--angle), rgba(255,255,255,1) 5%, rgba(87,226,229,1) 86%);
+        animation: 5s rotate linear infinite;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         
+        
     }
 
-   /* h1{
-       font-family: monospace;
-       font-size: 30px;
-       height: 35%;
+    #svg{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        z-index: -1;
+        
        
-       animation: fadeInAnimation ease 3s;
-   }
-
-   h2{
-       font-family: monospace;
-       animation: fadeInAnimation ease 3s;
-   } */
+    }
 
    @keyframes fadeInAnimation {
             0% {
@@ -119,27 +127,25 @@
             }
         }
         
-
-    #About-me{
-        /* background-color: rgba(0, 0, 0,0.5); */
-        /* background-color: #15034191; */
+        .about-paragraph{
+            color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            width: 75%;
+            gap: 15px;
+            display: grid;
+            grid-template-rows: auto auto auto auto auto;
+           word-spacing: 5px;
+           margin: 4% 0% 0% 5%;
+        }
+        #bottom-section-text{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin:5% 0% 0% 15%;
+        }
+   
         
-        display: grid;
-        grid-template-: auto auto auto;
-        text-align: center;
-        color: whitesmoke;
-        /* margin-top: 25%; */
-    }
-
-    #about-me-h1{
-        /* background-color: gray; */
-        border-radius: 150%;
-        
-    }
-    /* hr {
-        font-;
-    } */
-
+   
    
 </style>
 </head>
@@ -147,44 +153,61 @@
     
 
 
-    <div id="first-section">
-        
-        <div id= "nav-div"> 
-            <div id="nav-logo" style="display: grid; grid-template-columns: 1fr 95%;margin-left: 10%;">
-                <h1  style="font-family: fantasy; font-size: 50px;">Saeid</h1>
-                <h2 style="font-family: fantasy;">Abedi</h2>
+    <div id="S-page">
+        <div id="header-side">
+            <div id= "nav-div"> 
+                <div id="nav-logo" style="display: grid; grid-template-columns: 1fr 95%;margin-left: 10%;">
+                    <h1  style="font-family: fantasy; font-size: 50px;">Saeid</h1>
+                    <h2 style="font-family: fantasy;">Abedi</h2>
+                </div>
+                <nav class="nav">
+                    <ul>
+                    <li>About</li>
+                    <li>Technical skills</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="nav">
-                <ul>
-                <li>About</li>
-                <li>Technical skills</li>
-                <li>Projects</li>
-                <li>Contact</li>
-                </ul>
-            </nav>
-        </div><br>
-        
-            <div id="bottom-section">
-                
-                
-                
-                <img id="MyPicture" src="me.jpg" alt="my photo" ;">
+        </div>
+
+        <div id="svg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="750" height="450" viewBox="0 0 1150 550">
+                <defs>
+                    <style>
+                        .cls-1 {
+                            position: relative;
+                            fill:whitesmoke ;
+                            font-size: 400px;
+                            font-family: monospace;
+                            opacity: 0.7;
+                            z-index: -1;
+                        
+                        }
+                    </style>
+                </defs>
+                <text id="S" class="cls-1" transform="translate(0 300)"><tspan x="0" y="0">SAEID</tspan></text>
+            </svg>
+        </div>
+        <div id="bottom-section" >
+            <h1 class="text-style">About me</h1>
+            
+        </div>
+
+        <div id="bottom-section-text" >
+            <div class="about-paragraph">
+                <p> <strong> Born:</strong> January 12th, 1985 in Hamburg, Germany </p>
+                <p> Place of residence: Barsbüttel, Schleswig-Holstein, Germany </p>
+                <p> Status: Single / 1 daughter </p>
+                <p>Languages: German (native), English (spoken + written) </p>
+                <p> Interests: Web technology, design trends, spin fishing and coastal fishing,
+                gaming, weight training, Vespa, marine biology, cooking (Italian / Mediterranean)</p>
             </div>
+            <img src="me.jpg" alt="an img" id="MyPicture">
+        </div>
     </div>
 
 
-    <div id="About-me">
-        <h1 id="about-me-h1">About me<h1></h1>
-        <p>A recently graduated computer science engineer <br>with exprience working in 
-        machine learning and deep learning.<br> i have a passion about Front-end developer.</p>
-    </div>
-
-    <div id="skills-div">
-        <h2>Technical skills</h2>
-        <p>Below you can see my programming skills,<br> for each field </p>
-
-
-    </div>
 
 
 
