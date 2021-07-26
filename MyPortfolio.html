@@ -7,10 +7,12 @@
     body{
         margin: 0 auto;
         /* background-color: black; */
-        background: rgb(63,64,63);
-background: linear-gradient(155deg, rgba(63,64,63,1) 33%, rgba(233,114,76,1) 100%);
+        background: rgb(29,32,31);
+        background: linear-gradient(0deg, rgba(29,32,31,1) 19%, rgba(87,226,229,1) 86%);
         background-repeat: no-repeat;
-        /* background-size: 100% 85%; */
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed
     }
 
 
@@ -22,34 +24,19 @@ background: linear-gradient(155deg, rgba(63,64,63,1) 33%, rgba(233,114,76,1) 100
         
     }
 
-    #left-section{
-        display: grid;
-        width: 85%;
-        /* margin: 15% 0% 0% 35%; */
-        height: 85%;
-        border-radius: 5%;
-        justify-content: center;
-    }
-
-    .text-left-section{
-        border-top:5px solid orangered;
-        border-bottom: 5px solid orangered;
-        margin-top: 25%;
-        
-        
-    }
-
-
-    #right-section{
+    #bottom-section{
         /* margin-left: 15%; */
-        /* display: grid;
-        grid-template-rows: auto auto; */
+        display: grid;
+        grid-template-rows: auto auto;
         color: whitesmoke;
     }
     #first-section{
         /* display: grid;
         grid-template-columns: auto auto; */
-        background-color: rgba(0,0,0,0.75);
+        background-color: rgb(20%,20%,20%);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position:center center;
         width: 95%;
         
         margin: 2.5% 0% 0% 2.55%;
@@ -74,7 +61,7 @@ background: linear-gradient(155deg, rgba(63,64,63,1) 33%, rgba(233,114,76,1) 100
         list-style-type: none;
         text-decoration: none;
         font-size: 20px;
-        font-family: fantasy;
+        font-family: Arial, Helvetica, sans-serif;
         
     }
 
@@ -84,9 +71,30 @@ background: linear-gradient(155deg, rgba(63,64,63,1) 33%, rgba(233,114,76,1) 100
     }
 
     li{
-        border:2px solid orangered;
-        border-radius: 100%;
-        padding: 10px;
+            --angle:0deg;
+            border: 3px solid transparent;
+            border-image: linear-gradient(var(--angle), rgba(29,32,31,1) 5%, rgba(87,226,229,1) 86%);
+            border-image-slice: 1;
+            padding: 10px;
+            animation: 5s rotate linear infinite ;
+            
+    }
+
+    @keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+    @property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+    .text-style{
+        background: -webkit-linear-gradient(#eee, #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
     }
 
    /* h1{
@@ -131,6 +139,8 @@ background: linear-gradient(155deg, rgba(63,64,63,1) 33%, rgba(233,114,76,1) 100
     /* hr {
         font-;
     } */
+
+   
 </style>
 </head>
 <body>
@@ -138,21 +148,28 @@ background: linear-gradient(155deg, rgba(63,64,63,1) 33%, rgba(233,114,76,1) 100
 
 
     <div id="first-section">
+        
         <div id= "nav-div"> 
             <div id="nav-logo" style="display: grid; grid-template-columns: 1fr 95%;margin-left: 10%;">
-                <h1 style="font-family: fantasy; font-size: 50px;">Saeid</h1>
+                <h1  style="font-family: fantasy; font-size: 50px;">Saeid</h1>
                 <h2 style="font-family: fantasy;">Abedi</h2>
             </div>
             <nav class="nav">
                 <ul>
-                <li>Home</li>
+                <li>About</li>
                 <li>Technical skills</li>
                 <li>Projects</li>
                 <li>Contact</li>
                 </ul>
             </nav>
         </div><br>
-            <img id="MyPicture" src="me.jpg" alt="my photo" style="margin-left: 35%;">
+        
+            <div id="bottom-section">
+                
+                
+                
+                <img id="MyPicture" src="me.jpg" alt="my photo" ;">
+            </div>
     </div>
 
 
