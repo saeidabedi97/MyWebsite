@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html  charset="UTF-8">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 <style>
 
     *{
@@ -12,9 +13,10 @@
 
     body{
         margin: 0 auto;
-        /* background-color: black; */
-        background: rgb(29,32,31);
-        background: linear-gradient(0deg, rgb(255, 255, 255) 19%, rgba(87,226,229,1) 86%);
+        /* background: rgb(238,239,168); */
+        /* background: linear-gradient(0deg, rgba(249,87,56,1) 0%, rgba(23,42,58,1) 100%); */
+        background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nNjAwJyBoZWlnaHQ9JzYwMCcgdmlld0JveD0nMCAwIDE1MCAxNTAnPgo8ZmlsdGVyIGlkPSdpJyB4PScwJyB5PScwJz4KCTxmZUNvbG9yTWF0cml4IHR5cGU9J21hdHJpeCcgdmFsdWVzPScxIDAgMCAwIDAgIDAgMSAwIDAgMCAgMCAwIDEgMCAwICAwIDAgMCAwIDAnIC8+CjwvZmlsdGVyPgo8ZmlsdGVyIGlkPSduJyB4PScwJyB5PScwJz4KCTxmZVR1cmJ1bGVuY2UgdHlwZT0ndHVyYnVsZW5jZScgYmFzZUZyZXF1ZW5jeT0nLjcnIHJlc3VsdD0nZnV6eicgbnVtT2N0YXZlcz0nMicgc3RpdGNoVGlsZXM9J3N0aXRjaCcvPgoJPGZlQ29tcG9zaXRlIGluPSdTb3VyY2VHcmFwaGljJyBpbjI9J2Z1enonIG9wZXJhdG9yPSdhcml0aG1ldGljJyBrMT0nMCcgazI9JzEnIGszPSctNzMnIGs0PScuMDEnIC8+CjwvZmlsdGVyPgo8cmVjdCB3aWR0aD0nMTAyJScgaGVpZ2h0PScxMDIlJyBmaWxsPScjMDMwMzFhJy8+CjxyZWN0IHg9Jy0xJScgeT0nLTElJyB3aWR0aD0nMTAyJScgaGVpZ2h0PScxMDIlJyBmaWxsPScjZmZmZmZmJyBmaWx0ZXI9J3VybCgjbiknIG9wYWNpdHk9JzEnLz4KPHJlY3QgeD0nLTElJyB5PSctMSUnIHdpZHRoPScxMDIlJyBoZWlnaHQ9JzEwMiUnIGZpbGw9JyMwMzAzMWEnIGZpbHRlcj0ndXJsKCNpKScgb3BhY2l0eT0nMScvPgo8L3N2Zz4=');
+  
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -25,52 +27,37 @@
     #MyPicture{
         height: 350px;
         width: 350px;
-        /* padding: 10px; */
         border-radius: 5%;
         z-index: 1;
-        
     }
 
-    #bottom-section{
+    #bottom-section{ /*About me header text*/
         display: grid;
         position: relative;
         margin:10% 0% 0% 30%;
         color: whitesmoke;
+        font-size: 35px;
     }
-    #S-page{
-        /* display: grid;
-        grid-template-rows: 1fr 1fr 85%; */
+    #S-page{ /*About me page */
         height: 1900px;
-        background-color: rgb(10%,10%,10%,0.8);
-        /* background-size: cover;
-        background-attachment: fixed;
-        background-position:center center; */
+        background-color: rgb(10%,10%,10%,0.5);
+        filter:drop-shadow(16px 16px 10px black);
         width: 95%;
-        
         margin: 2.5% 0% 0% 2.55%;
         color: whitesmoke;
-        /* height: 750px */
-        /* animation: fadeInAnimation ease 3s; */
-        
-        
     }
 
-    
-
-    ul{
+    ul{/*top navigator*/
         display: grid;
         grid-template-columns: auto auto auto auto auto;
-        /* position: fixed; */
         color: whitesmoke;
         margin: 0% 0% 0% 35% ;
-    
-        padding: 10px;
+        padding: 15px;
         gap: 15px;
         list-style-type: none;
         text-decoration: none;
         font-size: 20px;
         font-family: Arial, Helvetica, sans-serif;
-        
     }
 
     #nav-div {
@@ -79,37 +66,32 @@
        padding: 10px;
     }
 
-    
-
     li{
-            --angle:0deg;
-            border: 3px solid transparent;
-            border-image: linear-gradient(var(--angle), rgba(29,32,31,1) 5%, rgba(87,226,229,1) 86%);
-            border-image-slice: 1;
-            padding: 10px;
-            animation: 5s rotate linear infinite ;
+        --angle:0deg;
+        border: 3px solid transparent;
+        border-image: linear-gradient(var(--angle), rgba(228,239,244,1) 0%, rgba(0,41,116,1) 100%, rgba(23,42,58,1) 100%);            border-image-slice: 1;
+        padding: 10px;
+        animation: 5s rotate linear infinite ;
             
     }
 
     @keyframes rotate {
-  to {
-    --angle: 360deg;
-  }
-}
+        to {
+            --angle: 360deg;
+        }
+    
+    }
     @property --angle {
-    syntax: '<angle>';
-    initial-value: 0deg;
-    inherits: false;
-}
+        syntax: '<angle>';
+        initial-value: 0deg;
+        inherits: false;
+    }
     .text-style{
         font-size: 120px;
-        font-family: fantasy;
-        background: -webkit-linear-gradient(var(--angle), rgba(255,255,255,1) 5%, rgba(87,226,229,1) 86%);
+        background: linear-gradient(var(--angle), rgba(228,239,244,1) 0%, rgba(0,41,116,1) 100%, rgba(23,42,58,1) 100%);            border-image-slice: 1;
         animation: 5s rotate linear infinite;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        
-        
+        -webkit-text-fill-color: transparent; 
     }
 
     #svg{
@@ -117,73 +99,73 @@
         display: flex;
         justify-content: center;
         z-index: -1;
-        
-       
+        filter:drop-shadow(16px 16px 10px black);
     }
 
    @keyframes fadeInAnimation {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
+        0% {
+            opacity: 0;
         }
+        100% {
+            opacity: 1;
+        }
+    }
         
-        .about-paragraph{
-            color: whitesmoke;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
-            width: 75%;
-            gap: 15px;
-            display: grid;
-            grid-template-rows: auto auto auto auto auto;
-           word-spacing: 5px;
-           margin: 4% 0% 0% 5%;
-           opacity: 0.8;
-        }
-        #bottom-section-text{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            margin:5% 0% 0% 15%;
-        }
+    .about-paragraph{
+        color: whitesmoke;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        width: 75%;
+        gap: 15px;
+        display: grid;
+        grid-template-rows: auto auto auto auto auto;
+        word-spacing: 5px;
+        margin: 4% 0% 0% 5%;
+        opacity: 0.8;
+    }
+    #bottom-section-text{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin:5% 0% 0% 15%;
+    }
    
-        #mypicture-background{
-            fill: black;
-            position: absolute;
-            width: 400px;
-            height: 450px;
-            margin:0% 0% 0% 50%;
-            opacity: 0.1;
-            /* z-index: 1; */
-        }
+    #mypicture-background{
+        fill: black;
+        position: absolute;
+        width: 400px;
+        height: 450px;
+        margin:0% 0% 0% 50%;
+        opacity: 0.1;
+    }
         
-        #box-for-line {
+    #box-for-line {
         display: flex;
         align-items: center;
         text-align: center;
         width: 100%;
         margin:10% 0% 0% 0%;
-}
+    }
 
-#box-for-line:not(:empty)::before {
-    margin-right: 5%;
-}
+    #box-for-line:not(:empty)::before {
+        margin-right: 5%;
+    }
 
-#box-for-line::before, #box-for-line::after {
-    content: '';
-    flex: 1;
-    border-bottom: 5px solid #DADADA;
-    
-}
+    #box-for-line::before, #box-for-line::after {
+        content: '';
+        flex: 1;
+        border-bottom: 5px solid #DADADA;
+        
+    }
 
     #box-for-line:not(:empty)::after {
     margin-left: 5%;
-}
-#box-for-line::before, #box-for-line::after {
-    content: '';
-    flex: 1;
-    border-bottom: 5px solid #DADADA;}
+    }
+    #box-for-line::before, #box-for-line::after {
+        content: '';
+        flex: 1;
+        border-bottom: 5px solid #DADADA;
+    }
+
 
 
     #describe-background{
@@ -191,7 +173,6 @@
         width: 1000px;
         margin:0% 40% 85% 2%;
         opacity: 0.1;
-
     }
 
 
@@ -201,15 +182,16 @@
         margin:6% 0% 0% 8%;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 20px;
-        opacity: 0.7;
-        
+        opacity: 0.85;
         --angle:0deg;
         border: 4px solid transparent;
-        border-image: linear-gradient(var(--angle), rgba(29,32,31,1) 5%, rgba(87,226,229,1) 86%);
+        border-image: linear-gradient(var(--angle), rgba(228,239,244,1) 0%, rgba(0,41,116,1) 100%, rgba(23,42,58,1) 100%);            border-image-slice: 1;
         border-image-slice: 1;
         padding: 20px;
         animation: 5s rotate linear infinite ;
         background-color: rgb(10%,10%,10%,1);
+        filter:drop-shadow(16px 16px 10px black);
+
     }
 
     #describe-right{
@@ -219,14 +201,15 @@
         color: whitesmoke;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 20px;
-        opacity: 0.7;
+        opacity: 0.85;
         --angle:0deg;
-            border: 4px solid transparent;
-            border-image: linear-gradient(var(--angle), rgba(29,32,31,1) 5%, rgba(87,226,229,1) 86%);
-            border-image-slice: 1;
-            padding: 20px;
-            animation: 5s rotate linear infinite ;
-            background-color: rgb(10%,10%,10%,1);
+        border: 4px solid transparent;
+        border-image: linear-gradient(var(--angle), rgba(228,239,244,1) 0%, rgba(0,41,116,1) 100%, rgba(23,42,58,1) 100%);            border-image-slice: 1;
+        border-image-slice: 1;
+        padding: 20px;
+        animation: 5s rotate linear infinite ;
+        background-color: rgb(10%,10%,10%,1);
+        filter:drop-shadow(16px 16px 10px black);     
     }
    
     #myself-describe{
@@ -245,13 +228,13 @@
         font-size: 20px;
         opacity: 0.7;
         --angle:0deg;
-            border: 4px solid transparent;
-            border-image: linear-gradient(var(--angle), rgba(29,32,31,1) 5%, rgba(87,226,229,1) 86%);
-            border-image-slice: 1;
-            padding: 20px;
-            animation: 5s rotate linear infinite ;
-            background-color: rgb(10%,10%,10%,1);
-            text-align: left;
+        border: 4px solid transparent;
+        border-image: linear-gradient(var(--angle), rgba(228,239,244,1) 0%, rgba(0,41,116,1) 100%, rgba(23,42,58,1) 100%);            border-image-slice: 1;
+        border-image-slice: 1;
+        padding: 20px;
+        animation: 5s rotate linear infinite ;
+        background-color: rgb(10%,10%,10%,1);
+        text-align: left;
             
 
     }
@@ -261,21 +244,164 @@
         width: 1200px;
         height: 250px;
         opacity: 0.1;
-        /* margin: 0% 0% 0% 0%; */
-        
-        
+    }
+
+    #skill-page{
+        height: 2800px;
+        background-color: rgb(10%,10%,10%,0.5);
+        filter:drop-shadow(16px 16px 10px black);
+        width: 95%;
+        margin: 5% 0% 15% 2.55%;
+    }
+
+    #moon-svg{
+        width: 350px;
+        height: 350px;
+        opacity:0.4 ;
+    }
+
+    #skill-header{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    #skill-header-text{
+        font-size: 200px;
+        background: linear-gradient(var(--angle), rgba(228,239,244,1) 0%, rgba(0,41,116,1) 100%, rgba(23,42,58,1) 100%);            border-image-slice: 1;
+        animation: 5s rotate linear infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        margin: 15% 350px 0% 0%; 
+        width: 350px;
+    }
+
+    #career-line{
+        position: absolute;
+        margin: 0% 0% 0% 37.5%;
+    }
+   
+    #skill-box1{
+        position: absolute;
+        border: 4px solid transparent;
+        border-image: linear-gradient(var(--angle), rgba(228,239,244,1) 0%, rgba(0,41,116,1) 100%, rgba(23,42,58,1) 100%);           
+        border-image-slice: 1;        
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-items: center;       
+        height: 220px;
+        width: 30%;
+        margin: 2% 0% 0% 5%;
+        animation: 5s rotate linear infinite;
+        background-color: rgba(10%,10%,10%,0.5);
+    }
+
+    #box-description{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: whitesmoke;
+        border-top: 3px solid whitesmoke;
+        padding: 25px;
+
+    }
+
+    #skill-box2{
+        position: absolute;
+        border: 4px solid transparent;
+        border-image: linear-gradient(var(--angle), rgba(228,239,244,1) 0%, rgba(0,41,116,1) 100%, rgba(23,42,58,1) 100%);           
+        border-image-slice: 1;        
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-items: center;       
+        height: 220px;
+        width: 30%;
+        margin: 10% 0% 0% 65%;
+        animation: 5s rotate linear infinite;
+    }
+
+    #skill-box3{
+        position: absolute;
+        border: 4px solid transparent;
+        border-image: linear-gradient(var(--angle), rgba(228,239,244,1) 0%, rgba(0,41,116,1) 100%, rgba(23,42,58,1) 100%);           
+        border-image-slice: 1;        
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-items: center;       
+        height: 220px;
+        width: 30%;
+        margin: 25% 0% 0% 5%;
+        animation: 5s rotate linear infinite;
+    }
+
+    #skill-box4{
+        position: absolute;
+        border: 4px solid transparent;
+        border-image: linear-gradient(var(--angle), rgba(228,239,244,1) 0%, rgba(0,41,116,1) 100%, rgba(23,42,58,1) 100%);           
+        border-image-slice: 1;        
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-items: center;       
+        height: 220px;
+        width: 30%;
+        margin: 40% 0% 0% 65%;
+        animation: 5s rotate linear infinite;
+    }
+
+    #skill-box5{
+        position: absolute;
+        border: 4px solid transparent;
+        border-image: linear-gradient(var(--angle), rgba(228,239,244,1) 0%, rgba(0,41,116,1) 100%, rgba(23,42,58,1) 100%);           
+        border-image-slice: 1;        
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-items: center;       
+        height: 220px;
+        width: 30%;
+        margin: 55% 0% 0% 5%;
+        animation: 5s rotate linear infinite;
+    }
+
+    #skill-box6{
+        position: absolute;
+        border: 4px solid transparent;
+        border-image: linear-gradient(var(--angle), rgba(228,239,244,1) 0%, rgba(0,41,116,1) 100%, rgba(23,42,58,1) 100%);           
+        border-image-slice: 1;        
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-items: center;       
+        height: 220px;
+        width: 30%;
+        margin: 70% 0% 0% 65%;
+        animation: 5s rotate linear infinite;
+    }
+
+    #skill-box7{
+        position: absolute;
+        border: 4px solid transparent;
+        border-image: linear-gradient(var(--angle), rgba(228,239,244,1) 0%, rgba(0,41,116,1) 100%, rgba(23,42,58,1) 100%);           
+        border-image-slice: 1;        
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-items: center;       
+        height: 220px;
+        width: 30%;
+        margin: 85% 0% 0% 5%;
+        animation: 5s rotate linear infinite;
+    }
+   
+    #technical-boxes{
+        margin: 5% 0% 0% 0%;
+    }
+
+    #icons{
+       
     }
 </style>
 </head>
 <body>
-    
-
-
     <div id="S-page">
         <div id="header-side">
             <div id= "nav-div"> 
                 <div id="nav-logo" style="margin: 2% 0% 0% 15%;">
-                    <h1 class="text-style" style="font-family: fantasy; font-size: 50px;">Saeid Abedi</h1>
+                    <h1 class="text-style" style="font-family: Arial, Helvetica, sans-serif; font-size: 50px;">Saeid Abedi</h1>
                     
                 </div>
                 <nav class="nav">
@@ -304,13 +430,10 @@
                         
                         }
                     </style>
-                </defs>
-                <text id="S" class="cls-1" transform="translate(0 300)"><tspan x="0" y="0">SAEID</tspan></text>
-            </svg>
+                </defs>  
         </div>
         <div id="bottom-section" >
-            <h1 class="text-style">About me</h1>
-            
+            <h1 class="text-style" style="font-family: Arial, Helvetica, sans-serif;">About me</h1>
         </div>
 
         <div id="bottom-section-text" >
@@ -363,6 +486,104 @@
             </div>
         </div>
     </div>
+   
+    <div id="skill-page">
+        <div id="skill-header">
+            <embed src="moon.svg" id="moon-svg">
+            <div>
+                <h2 id="skill-header-text" >skills</h2>
+            </div>
+        </div>
+
+        <div id="box-for-line">      
+                     
+                <div>
+                    <p style="padding: 10px;font-family: Arial, Helvetica, sans-serif; opacity: 0.5;font-size: 25px;color: whitesmoke;"><strong> Programming carrier</strong></p>
+                </div>
+        </div>
+
+    <div id="technical-boxes">
+        <embed src="Group 8.svg" id="career-line">
+        <div id="skill-box1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="89" height="40" viewBox="0 0 89 40">
+            <text id="HTML" transform="translate(0 32)" fill="#fff" font-size="30" font-family="SegoeUIBlack, Segoe UI"><tspan x="0" y="0">HTML</tspan></text>
+            </svg>
+
+            <p id="box-description">I started my programming carrier with html and css to design webpages</p>
+        </div>
+
+        <div id="skill-box2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="89" height="40" viewBox="0 0 89 40">
+            <text id="CSS" transform="translate(0 32)" fill="#fff" font-size="30" font-family="SegoeUIBlack, Segoe UI"><tspan x="0" y="0">CSS</tspan></text>
+            </svg>
+
+            <p id="box-description">Html without css is like a building without color.<br> while learning html, i learnt css.</p>
+        </div>
+
+        <div id="skill-box3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="89" height="40" viewBox="0 0 89 40">
+            <text id="C" transform="translate(0 32)" fill="#fff" font-size="30" font-family="SegoeUIBlack, Segoe UI"><tspan x="0" y="0">C</tspan></text>
+            </svg>
+
+            <p id="box-description">C was my first programming language that i learnt.<br>
+                I believe if someone is good at c,he/she can be good at any other languages.</p>
+        </div>
+
+        <div id="skill-box4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="89" height="40" viewBox="0 0 89 40">
+            <text id="Java" transform="translate(0 32)" fill="#fff" font-size="30" font-family="SegoeUIBlack, Segoe UI"><tspan x="0" y="0">JAVA</tspan></text>
+            </svg>
+
+            <p id="box-description">Java was my first object-oriented language that i learnt. <br>
+                making apps for desktop and android phones was the goal of learning this language</p>
+        </div>
+
+        <div id="skill-box5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" viewBox="0 0 89 40">
+            <text id="Assembly" transform="translate(0 32)" fill="#fff" font-size="30" font-family="SegoeUIBlack, Segoe UI"><tspan x="0" y="0">ASSEMBLY</tspan></text>
+            </svg>
+
+            <p id="box-description">converting c programs to assembly was really fun. <br>
+                It helped me to understand more about the way computer works </p>
+        </div>
+
+        <div id="skill-box6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" viewBox="0 0 89 40">
+            <text id="Python" transform="translate(0 32)" fill="#fff" font-size="30" font-family="SegoeUIBlack, Segoe UI"><tspan x="0" y="0">PYTHON</tspan></text>
+            </svg>
+
+            <p id="box-description">My favorite language at all time. i learnt python by working 
+                with raspberry pi and i used it for computer vision programs. <br>
+                Training models in CNN and deep learning is my favorite thing to do in Python.</p>
+        </div>
+
+        <div id="skill-box7">
+            <svg xmlns="http://www.w3.org/2000/svg" width="250" height="40" viewBox="0 0 89 40">
+            <text id="JS" transform="translate(0 32)" fill="#fff" font-size="30" font-family="SegoeUIBlack, Segoe UI"><tspan x="0" y="0">JAVA SCRIPT</tspan></text>
+            </svg>
+
+            <p id="box-description">I decided to start my career in frontend developer. 
+                After gaining some exprience in making responsive websites, 
+                Java script helped me to be better at front-end developing.</p>
+        </div>
+
+        <p style="position: absolute; margin: 112% 0% 0% 42%; color: whitesmoke;font-family: monospace;font-size: 25px;"><strong>More to come...</strong></p>
+        
+    </div>
+    
+    <div id="libraries-section">
+        <div id="box-for-line" style="margin: 130% 0% 0% 0%;">               
+                <div>
+                    <p style="padding: 10px;font-family: Arial, Helvetica, sans-serif; font-size: 25px;color: whitesmoke;"><strong>Libraries & Frameworks</strong></p>
+                </div>
+        </div>
+        <div>
+        <embed src="Group 6.svg" id="icons"> 
+        <embed src="Group 7.svg" id=icons">
+        </div>
+    
+    </div>
+
 
 </body>
 </html>
