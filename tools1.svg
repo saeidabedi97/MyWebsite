@@ -1,11 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="144.329" height="116.32" viewBox="0 0 144.329 116.32">
-  <g id="Group_6" data-name="Group 6" transform="translate(-210.751 -793.744)">
-      <path id="Path_1" data-name="Path 1" d="M241.806,794.244h82.835l29.876,55.223-29.876,60.1H241.806l-30.489-60.1Z" fill="rgba(10%,10%,10%,1);" stroke="url(#linear-gradient)" stroke-width="4"/>
-
-    <text id="Bootstrap" transform="translate(234 860)" fill="#fff" font-size="20" font-family="SegoeUIBlack, Segoe UI"><tspan x="0" y="0">Bootstrap</tspan></text>
+  <g id="tools1" transform="translate(-210.751 -793.744)">
+    <path id="Path_1" data-name="Path 1" d="M241.806,794.244h82.835l29.876,55.223-29.876,60.1H241.806l-30.489-60.1Z" fill="rgba(10%,10%,10%,1)" stroke="url(#linear-gradient)" stroke-width="4"/>
+    <text id="ADOBE_XD" data-name="ADOBE XD" transform="translate(230 860)" fill="#fff" font-size="20" font-family="SegoeUIBlack, Segoe UI"><tspan x="0" y="0">ADOBE XD</tspan></text>
   </g>
-  
-	 <defs>
+
+  <defs>
         <linearGradient id="linear-gradient" x1="-100%" y1="0" x2="200%" y2="0" >
             <stop offset="0" stop-color="rgba(228,239,244,1)">
                <animate attributeName="offset" values="0;0.2;0.5" dur="2s" repeatCount="indefinite"  /> 
@@ -15,8 +14,4 @@
             </stop>
         </linearGradient>
     </defs>
- 
-
-  
-
 </svg>

@@ -86,6 +86,44 @@
         initial-value: 0deg;
         inherits: false;
     }
+
+
+    .shooting-stars {
+        z-index: 10;
+        width: 5px;
+        height: 85px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(to top, rgba(255, 255, 255, 0), white);
+            animation: animShootingStar 5s linear infinite;
+    }
+ @keyframes animStar {
+ from {
+ transform: translateY(0px);
+}
+ to {
+ transform: translateY(-2560px) translateX(-2560px);
+}
+}
+@keyframes animShootingStar {
+ from {
+ transform: translateY(0px) translateX(0px) rotate(-45deg);
+ opacity: 1;
+ height: 5px;
+}
+ to {
+ transform: translateY(-2560px) translateX(-2560px) rotate(-45deg);
+ opacity: 1;
+ height: 800px;
+}
+}
+
+
+   
+
     .text-style{
         font-size: 120px;
         background: linear-gradient(var(--angle), rgba(228,239,244,1) 0%, rgba(0,41,116,1) 100%, rgba(23,42,58,1) 100%);            border-image-slice: 1;
@@ -247,7 +285,7 @@
     }
 
     #skill-page{
-        height: 2800px;
+        height: 3300px;
         background-color: rgb(10%,10%,10%,0.5);
         filter:drop-shadow(16px 16px 10px black);
         width: 95%;
@@ -271,7 +309,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; 
         margin: 15% 350px 0% 0%; 
-        width: 350px;
+        width: 500px;
     }
 
     #career-line{
@@ -391,14 +429,23 @@
         margin: 5% 0% 0% 0%;
     }
 
+
     #icons{
-       
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        margin: 5% 0% 0% 8%;
+        filter:drop-shadow(6px 5px 20px whitesmoke);
+        
     }
+
+   
+    
 </style>
 </head>
 <body>
     <div id="S-page">
         <div id="header-side">
+
             <div id= "nav-div"> 
                 <div id="nav-logo" style="margin: 2% 0% 0% 15%;">
                     <h1 class="text-style" style="font-family: Arial, Helvetica, sans-serif; font-size: 50px;">Saeid Abedi</h1>
@@ -432,6 +479,7 @@
                     </style>
                 </defs>  
         </div>
+        <div class="night-sky"><div class="shooting-stars"></div></div>
         <div id="bottom-section" >
             <h1 class="text-style" style="font-family: Arial, Helvetica, sans-serif;">About me</h1>
         </div>
@@ -491,7 +539,7 @@
         <div id="skill-header">
             <embed src="moon.svg" id="moon-svg">
             <div>
-                <h2 id="skill-header-text" >skills</h2>
+                <h2 id="skill-header-text" >Skills</h2>
             </div>
         </div>
 
@@ -577,13 +625,30 @@
                     <p style="padding: 10px;font-family: Arial, Helvetica, sans-serif; font-size: 25px;color: whitesmoke;"><strong>Libraries & Frameworks</strong></p>
                 </div>
         </div>
-        <div>
-        <embed src="Group 6.svg" id="icons"> 
-        <embed src="Group 7.svg" id=icons">
+        <div id="icons">
+            <embed src="Group 6.svg"> 
+            <embed src="Group 7.svg" >
+            <embed src="SASS-GP.svg" >
+            <embed src="Group 10.svg" >
+            <embed src="Group 9.svg" >
         </div>
     
     </div>
+    <div id="tool-section">
+        <div id="box-for-line">               
+                <div>
+                    <p style="padding: 10px;font-family: Arial, Helvetica, sans-serif;font-size: 25px; color: whitesmoke;"><strong> Tools that i use</strong></p>
+                </div>
+        </div>
 
+        <div id="icons">
+            <embed src="tools1.svg" type="">
+            <embed src="tools2.svg" type="">
+            <embed src="tools3.svg" type="">
+            <embed src="tools4.svg">
+            <embed src="tools5.svg" type="">
+        </div>
+    </div>
 
 </body>
 </html>
