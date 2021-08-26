@@ -293,14 +293,16 @@
     }
 
     #moon-svg{
+        position: fixed;
         width: 350px;
         height: 350px;
-        opacity:0.4 ;
+        margin-left: 2%;
+        opacity:1 ;
     }
 
     #skill-header{
-        display: grid;
-        grid-template-columns: auto auto;
+        margin: 0% 0% 0% 30%;
+        padding: 15px;
     }
     #skill-header-text{
         font-size: 200px;
@@ -308,8 +310,8 @@
         animation: 5s rotate linear infinite;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; 
-        margin: 15% 350px 0% 0%; 
-        width: 500px;
+        margin: 0% 350px 0% 0%; 
+        width: 750px;
     }
 
     #career-line{
@@ -439,20 +441,29 @@
     }
 
    
-    
+   
+   .light-blue{
+    color: #daf6ff;
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+    font-family: 'Share Tech Mono', monospace;
+    color: #ffffff;
+   }
 </style>
 </head>
 <body>
+    <embed src="moon.svg" id="moon-svg">
+
     <div id="S-page">
         <div id="header-side">
+            
 
             <div id= "nav-div"> 
                 <div id="nav-logo" style="margin: 2% 0% 0% 15%;">
-                    <h1 class="text-style" style="font-family: Arial, Helvetica, sans-serif; font-size: 50px;">Saeid Abedi</h1>
+                    <h1 class="light-blue" style=" font-size: 50px;">Saeid Abedi</h1>
                     
                 </div>
                 <nav class="nav">
-                    <ul>
+                    <ul class="light-blue">
                     <li>About</li>
                     <li>Technical skills</li>
                     <li>Projects</li>
@@ -481,7 +492,7 @@
         </div>
         <div class="night-sky"><div class="shooting-stars"></div></div>
         <div id="bottom-section" >
-            <h1 class="text-style" style="font-family: Arial, Helvetica, sans-serif;">About me</h1>
+            <h1 id="skill-header-text" class="light-blue" style="font-size: 110px;">About me</h1>
         </div>
 
         <div id="bottom-section-text" >
@@ -499,7 +510,7 @@
 
         <div id="box-for-line">               
                 <div>
-                    <p style="padding: 10px;font-family: Arial, Helvetica, sans-serif; opacity: 0.5;font-size: 25px;"><strong> How do i decribe my self?</strong></p>
+                    <p class="light-blue" style="padding: 10px; font-size: 25px;"><strong> How do i decribe my self?</strong></p>
                 </div>
         </div>
 
@@ -520,7 +531,7 @@
         </div>
         <div id="box-for-line">               
                 <div>
-                    <p style="padding: 10px;font-family: Arial, Helvetica, sans-serif; opacity: 0.5;font-size: 25px;"><strong> How do i decribe my job?</strong></p>
+                    <p class="light-blue" style="padding: 10px;font-size: 25px;"><strong> How do i decribe my job?</strong></p>
                 </div>
         </div>
         
@@ -537,16 +548,16 @@
    
     <div id="skill-page">
         <div id="skill-header">
-            <embed src="moon.svg" id="moon-svg">
             <div>
-                <h2 id="skill-header-text" >Skills</h2>
+                <h2 id="skill-header-text" class="light-blue">Skills</h2>
             </div>
         </div>
+        <div class="night-sky"><div class="shooting-stars"></div></div>
 
         <div id="box-for-line">      
                      
                 <div>
-                    <p style="padding: 10px;font-family: Arial, Helvetica, sans-serif; opacity: 0.5;font-size: 25px;color: whitesmoke;"><strong> Programming carrier</strong></p>
+                    <p class="light-blue" style="padding: 10px;font-size: 25px;"><strong> Programming carrier</strong></p>
                 </div>
         </div>
 
@@ -554,7 +565,7 @@
         <embed src="Group 8.svg" id="career-line">
         <div id="skill-box1">
             <svg xmlns="http://www.w3.org/2000/svg" width="89" height="40" viewBox="0 0 89 40">
-            <text id="HTML" transform="translate(0 32)" fill="#fff" font-size="30" font-family="SegoeUIBlack, Segoe UI"><tspan x="0" y="0">HTML</tspan></text>
+            <text class="light-blue" id="HTML" transform="translate(0 32)" fill="rgba(10, 175, 230, 1)" font-size="30" ><tspan x="0" y="0">HTML</tspan></text>
             </svg>
 
             <p id="box-description">I started my programming carrier with html and css to design webpages</p>
@@ -562,7 +573,7 @@
 
         <div id="skill-box2">
             <svg xmlns="http://www.w3.org/2000/svg" width="89" height="40" viewBox="0 0 89 40">
-            <text id="CSS" transform="translate(0 32)" fill="#fff" font-size="30" font-family="SegoeUIBlack, Segoe UI"><tspan x="0" y="0">CSS</tspan></text>
+            <text class="light-blue" id="CSS" transform="translate(0 32)" fill="rgba(10, 175, 230, 1)" font-size="30" ><tspan x="0" y="0">CSS</tspan></text>
             </svg>
 
             <p id="box-description">Html without css is like a building without color.<br> while learning html, i learnt css.</p>
@@ -570,7 +581,7 @@
 
         <div id="skill-box3">
             <svg xmlns="http://www.w3.org/2000/svg" width="89" height="40" viewBox="0 0 89 40">
-            <text id="C" transform="translate(0 32)" fill="#fff" font-size="30" font-family="SegoeUIBlack, Segoe UI"><tspan x="0" y="0">C</tspan></text>
+            <text class="light-blue" id="C" transform="translate(0 32)" fill="rgba(10, 175, 230, 1)" font-size="30" ><tspan x="0" y="0">C</tspan></text>
             </svg>
 
             <p id="box-description">C was my first programming language that i learnt.<br>
@@ -579,7 +590,7 @@
 
         <div id="skill-box4">
             <svg xmlns="http://www.w3.org/2000/svg" width="89" height="40" viewBox="0 0 89 40">
-            <text id="Java" transform="translate(0 32)" fill="#fff" font-size="30" font-family="SegoeUIBlack, Segoe UI"><tspan x="0" y="0">JAVA</tspan></text>
+            <text class="light-blue" id="Java" transform="translate(0 32)" fill="rgba(10, 175, 230, 1)" font-size="30" ><tspan x="0" y="0">JAVA</tspan></text>
             </svg>
 
             <p id="box-description">Java was my first object-oriented language that i learnt. <br>
@@ -588,7 +599,7 @@
 
         <div id="skill-box5">
             <svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" viewBox="0 0 89 40">
-            <text id="Assembly" transform="translate(0 32)" fill="#fff" font-size="30" font-family="SegoeUIBlack, Segoe UI"><tspan x="0" y="0">ASSEMBLY</tspan></text>
+            <text class="light-blue" id="Assembly" transform="translate(0 32)" fill="rgba(10, 175, 230, 1)" font-size="30" ><tspan x="0" y="0">ASSEMBLY</tspan></text>
             </svg>
 
             <p id="box-description">converting c programs to assembly was really fun. <br>
@@ -597,7 +608,7 @@
 
         <div id="skill-box6">
             <svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" viewBox="0 0 89 40">
-            <text id="Python" transform="translate(0 32)" fill="#fff" font-size="30" font-family="SegoeUIBlack, Segoe UI"><tspan x="0" y="0">PYTHON</tspan></text>
+            <text class:"light-blue" id="Python" transform="translate(0 32)" fill="rgba(10, 175, 230, 1)" font-size="30" ><tspan x="0" y="0">PYTHON</tspan></text>
             </svg>
 
             <p id="box-description">My favorite language at all time. i learnt python by working 
@@ -606,8 +617,8 @@
         </div>
 
         <div id="skill-box7">
-            <svg xmlns="http://www.w3.org/2000/svg" width="250" height="40" viewBox="0 0 89 40">
-            <text id="JS" transform="translate(0 32)" fill="#fff" font-size="30" font-family="SegoeUIBlack, Segoe UI"><tspan x="0" y="0">JAVA SCRIPT</tspan></text>
+            <svg xmlns="http://www.w3.org/2000/svg" width="285" height="40" viewBox="0 0 89 40">
+            <text class="light-blue" id="JS" transform="translate(0 32)" fill="rgba(10, 175, 230, 1)" font-size="30" "><tspan x="0" y="0">JAVA SCRIPT</tspan></text>
             </svg>
 
             <p id="box-description">I decided to start my career in frontend developer. 

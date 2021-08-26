@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="144.329" height="116.32" viewBox="0 0 144.329 116.32">
   <g id="Group_6" data-name="Group 6" transform="translate(-210.751 -793.744)">
-      <path id="Path_1" data-name="Path 1" d="M241.806,794.244h82.835l29.876,55.223-29.876,60.1H241.806l-30.489-60.1Z" fill="rgba(10%,10%,10%,1);" stroke="url(#linear-gradient)" stroke-width="4"/>
+      <path id="Path_1" data-name="Path 1" d="M241.806,794.244h82.835l29.876,55.223-29.876,60.1H241.806l-30.489-60.1Z" fill="#1B1B1E" stroke="url(#linear-gradient)" stroke-width="4"/>
 
-    <text id="Bootstrap" transform="translate(234 860)" fill="#fff" font-size="20" font-family="SegoeUIBlack, Segoe UI"><tspan x="0" y="0">Bootstrap</tspan></text>
+    <text id="Bootstrap" transform="translate(238 857)" fill="rgba(10, 175, 230, 1)" font-size="20" font-family="SegoeUIBlack, Segoe UI"><tspan x="0" y="0">Bootstrap</tspan></text>
   </g>
   
 	 <defs>
@@ -10,7 +10,7 @@
             <stop offset="0" stop-color="rgba(228,239,244,1)">
                <animate attributeName="offset" values="0;0.2;0.5" dur="2s" repeatCount="indefinite"  /> 
             </stop>
-            <stop offset="0.8" stop-color="rgba(0,41,116,1)">
+            <stop offset="0.8" stop-color="rgba(10, 175, 230, 1)">
                 <animate attributeName="offset" values="0.5;0.7;0.8;1" dur="2s" repeatCount="indefinite"  /> 
             </stop>
         </linearGradient>

@@ -2,14 +2,14 @@
   <g id="tools3" transform="translate(-209.054 -792.244)">
     <path id="Path_1" data-name="Path 1" d="M241.806,794.244h82.835l29.876,55.223-29.876,60.1H241.806l-30.489-60.1Z" fill="rgba(10%,10%,10%,1)" stroke="url(#linear-gradient)" stroke-width="4"/>
     <text id="Scene_Builder" data-name="Scene
-Builder" transform="translate(247 847)" fill="#fff" font-size="20" font-family="SegoeUIBlack, Segoe UI"><tspan x="0" y="0">Scene</tspan><tspan x="0" y="27">Builder</tspan></text>
+Builder" transform="translate(247 847)" fill="rgba(10, 175, 230, 1)" font-size="20" font-family="SegoeUIBlack, Segoe UI"><tspan x="0" y="0">Scene</tspan><tspan x="0" y="27">Builder</tspan></text>
   </g>
   <defs>
         <linearGradient id="linear-gradient" x1="-100%" y1="0" x2="200%" y2="0" >
             <stop offset="0" stop-color="rgba(228,239,244,1)">
                <animate attributeName="offset" values="0;0.2;0.5" dur="2s" repeatCount="indefinite"  /> 
             </stop>
-            <stop offset="0.8" stop-color="rgba(0,41,116,1)">
+            <stop offset="0.8" stop-color="rgba(10, 175, 230, 1)">
                 <animate attributeName="offset" values="0.5;0.7;0.8;1" dur="2s" repeatCount="indefinite"  /> 
             </stop>
         </linearGradient>
